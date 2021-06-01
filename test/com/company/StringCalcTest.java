@@ -34,19 +34,19 @@ class StringCalcTest {
 
     @Test
     void addCase4() {
-        String str4 = "1,2;3"; // 6
+        String str4 = "1,2:3"; // 6
         assertEquals(6, calc.add(str4));
     }
 
     @Test
     void addCase5() {
-        String str5 = "\\;/n1;2;3"; // 6
+        String str5 = "//;\n1;2;3"; // 6
         assertEquals(6, calc.add(str5));
     }
 
     @Test
     void addCase6() {
-        String str6 = "\\;/n1;2;3"; // 6
+        String str6 = "//;\n1;2;3"; // 6
         assertEquals(6, calc.add(str6));
     }
 }
